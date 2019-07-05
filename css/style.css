@@ -1,0 +1,26 @@
+html, body{
+    margin:0;
+}
+
+#main{
+    background-image: url("Logo1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75vh, 75vw;
+    object-fit: cover;
+}
+#proj{
+    background-color: blueviolet;
+}
+#contacte{
+    background-color: chocolate;
+}
+.pantallaCompleta{
+    width:100vw;
+    height:100vh;
+}
+.botonNavDown{
+    bottom: 0px;
+    display: block;
+    margin: auto;
+}

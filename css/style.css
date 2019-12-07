@@ -1,7 +1,20 @@
 html, body{
     margin:0;
 }
-
+#entradas{
+    border-style: solid;
+    background-color: blue;
+    text-align: center;
+    /*POSITION*/
+    position: relative;
+    bottom: 0;
+    right: 0;
+    /*BOX :*/
+    width: 300px;
+    border: 15px solid green;
+    padding: 10px;
+    margin: 10px;
+}
 #main{
     background-image: url("Logo1.jpg");
     background-repeat: no-repeat;

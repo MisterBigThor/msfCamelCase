@@ -4,7 +4,7 @@
 
 * Footer siempre
 * Banner comprar entrada
-[ ] Aplicar trama de fondo
+* Aplicar trama de fondo
 * edicions anteriors, galeria de fotos i recaptacio
 * enllaç a projecte solidari
 * enllaç a informació pràctica
@@ -12,7 +12,7 @@
 ## Secció informació pràctica
 
 * com arribar
-[x] FAQS
+* FAQS
 * gots ecofriendly
 * Autoritzacio de menors
 * etc...

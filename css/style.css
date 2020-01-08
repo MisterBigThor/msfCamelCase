@@ -6,7 +6,7 @@ html, body{
     background-color: blue;
     text-align: center;
     /*POSITION*/
-    position: relative;
+    position: absolute;
     bottom: 0;
     right: 0;
     /*BOX :*/
@@ -36,4 +36,19 @@ html, body{
     bottom: 0px;
     display: block;
     margin: auto;
+}
+#NavBar{
+    background-color: white;
+}
+footer{
+    padding: 16px;
+}
+#tituloFAQ{
+    padding: 16px;
+    background-color: crimson;
+}
+
+#contenidoFAQ{
+    padding: 16px;
+    margin: 16px;
 }

@@ -5,7 +5,7 @@
 * Footer siempre
 * Banner comprar entrada
 * Aplicar trama de fondo
-* edicions anteriors i galeria de fotos
+* edicions anteriors, galeria de fotos i recaptacio
 * enllaç a projecte solidari
 * enllaç a informació pràctica
 

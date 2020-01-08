@@ -9,6 +9,13 @@ function scrollProj() {
     elmnt.scrollIntoView({behavior: "smooth", block: "start"});
 }
 
+function setnav(id){
+    document.getElementById('navMain').classList.remove('w3-white');
+    document.getElementById('navProj').classList.remove('w3-white');
+    document.getElementById('navFaqs').classList.remove('w3-white');
+    document.getElementById('navContacte').classList.remove('w3-white');
+    id.classList.add('w3-white');
+}
 
 function newFocus(id){
     console.log("entrada");

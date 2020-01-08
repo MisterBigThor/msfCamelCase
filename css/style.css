@@ -23,10 +23,10 @@ html, body{
     object-fit: cover;
 }
 #proj{
-    background-color: blueviolet;
+    background-color: white;
 }
 #contacte{
-    background-color: chocolate;
+    background-color: white;
 }
 .pantallaCompleta{
     width:100vw;

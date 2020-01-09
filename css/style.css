@@ -32,8 +32,8 @@ html, body{
     background-color: white;
 }
 .pantallaCompleta{
-    width:100vw;
-    height:100vh;
+    min-width:100vw;
+    min-height:100vh;
 }
 .botonNavDown{
     bottom: 0px;

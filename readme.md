@@ -2,23 +2,27 @@
 
 ## General a pàgina home
 
-* Footer siempre
+* Footer --> DONE, falta enlaces
 * comprar entrada --> DONE
 * Aplicar trama de fondo
-* edicions anteriors, galeria de fotos i recaptacio
 * enllaç a projecte solidari --> DONE
 * secciò a informació pràctica --> DONE
+
+## Secció projecte solidari
+Posar com a una altra pagina extra, com un blogspot.
+* gots ecofriendly
+* projecte
+* edicions anteriors, recaptacions
+* galeria de fotos
 
 ## Secció informació pràctica == FAQS
 
 * com arribar
-* gots ecofriendly
 * Autoritzacio de menors
-* etc, mes FAQS
+* mes FAQS
 
 ## Secció de voluntariat
 * Enllaç amb formulari --> DONE
 
-## Secció projecte solidari
-Posar com a una altra pagina extra, com un blogspot.
-
+## Enlaces
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp

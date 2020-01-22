@@ -8,19 +8,22 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts.js"></script>
     </head>
 
     <body onload="initJS()">
         <!--NavBar-->
-        <!--ADD RESPONSIVE MOBILE NAVBAR-->
-        <div id="NavBar" class="w3-top w3-bar w3-black">
-            <a id="navMain" href="#main"     class="w3-bar-item w3-button w3-padding w3-mobile" onclick="setnav(this)">Inici</a>
-            <a id="navProj" href="#proj"     class="w3-bar-item w3-button w3-padding w3-mobile" onclick="setnav(this)">Projecte</a>
-            <a id="navFaqs" href="#faqs"     class="w3-bar-item w3-button w3-padding w3-mobile" onclick="setnav(this)">Preguntes Frequents</a>
-            <a id="navVoluntari" href="#voluntaris" class="w3-bar-item w3-button w3-padding w3-mobile" onclick="setnav(this)">Voluntariat</a>
-            <a id="navContacte" href="#contacte" class="w3-bar-item w3-button w3-padding w3-mobile" onclick="setnav(this)">Contacte</a>
-            <a href="https://www.google.es" class="w3-bar-item w3-right w3-mobile">COMPRA LA TEVA ENTRADA !</a>
+        <div id="myTopNav" class="topnav">
+            <a id="navMain" href="#main" onclick="setnav(this)">Inici</a>
+            <a id="navProj" href="#proj"     onclick="setnav(this)">Projecte</a>
+            <a id="navFaqs" href="#faqs"     onclick="setnav(this)">Preguntes Frequents</a>
+            <a id="navVoluntari" href="#voluntaris" onclick="setnav(this)">Voluntariat</a>
+            <a id="navContacte" href="#contacte"  onclick="setnav(this)">Contacte</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>  
+            <a href="https://www.google.es" class="w3-right">COMPRA LA TEVA ENTRADA !</a>
         </div>
         <!--NavBar END-->
 

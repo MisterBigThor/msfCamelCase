@@ -1,23 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
-html, body{
-    margin:0;
-}
-#entradas{
-    border-style: solid;
-    background-color: blue;
-    text-align: center;
-    /*POSITION*/
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    /*BOX :*/
-    width: 300px;
-    border: 15px solid green;
-    padding: 10px;
-    margin: 10px;
-}
+
 #main{
     
     background-repeat: no-repeat;
@@ -99,7 +83,7 @@ a{
 }
 
 @media screen and (max-width: 920px){
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a {display: none;}
     .topnav a.icon {
         float: right;
         display: block;

@@ -20,3 +20,13 @@ function newFocus(id){
             console.log("otro");
     }
 }
+
+function myNavFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } 
+    else {
+        x.className = "topnav";
+    }
+}

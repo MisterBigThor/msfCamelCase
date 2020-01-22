@@ -9,28 +9,25 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="scripts.js"></script>
+        <script src="css/scripts.js"></script>
     </head>
 
     <body onload="initJS()">
         <!--NavBar-->
-        <div id="myTopNav" class="topnav">
-            <a id="navMain" href="#main" onclick="setnav(this)">Inici</a>
+        <div id="myTopnav" class="topnav">
+            <a id="navMain" href="#main"    onclick="setnav(this)">Inici</a>
             <a id="navProj" href="#proj"     onclick="setnav(this)">Projecte</a>
             <a id="navFaqs" href="#faqs"     onclick="setnav(this)">Preguntes Frequents</a>
             <a id="navVoluntari" href="#voluntaris" onclick="setnav(this)">Voluntariat</a>
             <a id="navContacte" href="#contacte"  onclick="setnav(this)">Contacte</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a id="compraEntrada" class="w3-right"href="https://www.google.es" >COMPRA LA TEVA ENTRADA !</a>
+            <a href="javascript:void(0);" class="icon" onclick="myNavFunction()">
                 <i class="fa fa-bars"></i>
             </a>  
-            <a href="https://www.google.es" class="w3-right">COMPRA LA TEVA ENTRADA !</a>
+            
         </div>
         <!--NavBar END-->
 
-        <!--COMPRA ENTRADAS-->    
-        <div id="entradas" class="w3-hide">
-            <a href="www.google.es">Compra la teva entrada!</a>
-        </div>
         <!--FIN COMPRA ENTRADAS-->
 
         <!--CONTENT-->
@@ -170,17 +167,15 @@
         
         <!--Footer zone-->
         <footer class="w3-container w3-center w3-padding-24 w3-black">        
-                    <a class="fa fa-facebook w3-hover-opacity"></a>
-                    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/musicasensefronteres/" ></a>
-                    <a class="fa fa-pinterest w3-hover-opacity"></a>
-                    <a class="fa fa-twitter w3-hover-opacity"></a>
-                    <div class="w3-col">
-                        <p>Powered by <a href="https://greentreedata.github.io/" title="W3.CSS" target="_blank" class="w3-hover-text-green">Green Tree Data</a></p>
-                    </div>
+            <a class="fa fa-facebook w3-hover-opacity"></a>
+            <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/musicasensefronteres/" ></a>
+            <a class="fa fa-pinterest w3-hover-opacity"></a>
+            <a class="fa fa-twitter w3-hover-opacity"></a>
+            <div class="w3-col">
+                <p>Powered by <a href="https://greentreedata.github.io/" title="W3.CSS" target="_blank" class="w3-hover-text-green">Green Tree Data</a></p>
+            </div>
 
-        </footer>
-        <!--Zona de ??fotografias, recaudacion, etc-->
-        
+        </footer>        
     </body>
     
 </html>

@@ -9,12 +9,7 @@ html{
     background-size: 75vh, 75vw;
     object-fit: cover;
 }
-#proj{
-    background-color: white;
-}
-#contacte{
-    background-color: white;
-}
+
 .pantallaCompleta{
     min-width:100vw;
     min-height:100vh;
@@ -57,6 +52,7 @@ a{
     background-color: #333;
     position: fixed;
     width: 100%;
+    height: 10%;
 }
 
 .topnav a {
@@ -101,4 +97,10 @@ a{
         display: block;
         text-align: left;
     }
+}
+#topBar {
+    position: fixed;
+    top : 0;
+    width: 100%;
+    background-color: black;
 }

@@ -9,34 +9,37 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="css/scripts.js"></script>
+        <script src="scripts.js"></script>
     </head>
 
     <body onload="initJS()">
         <!--NavBar-->
-        <div id="myTopnav" class="topnav">
-            <a id="navMain" href="#main"> Inici</a>
-            <a id="navProj" href="#proj"> Projecte</a>
-            <a id="navFaqs" href="#faqs"> Preguntes Frequents</a>
-            <a id="navVoluntari" href="#voluntaris"> Voluntariat</a>
-            <a id="navContacte" href="#contacte"> Contacte</a>
-            <a id="compraEntrada" class="w3-right" target="_blank" href="https://entradium.com/es/events/v-musica-sense-fronteres?mpl=web" > COMPRA LA TEVA ENTRADA !</a>
-            <a href="javascript:void(0);" class="icon" onclick="myNavFunction()">
-                <i class="fa fa-bars"></i>
-            </a>  
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar" onclick="w3_close()">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Tancar &times;</button>
+            <a class="w3-bar-item w3-button" id="navMain" href="#main"> Inici</a>
+            <a class="w3-bar-item w3-button" id="navProj" href="#proj"> Projecte</a>
+            <a class="w3-bar-item w3-button" id="navFaqs" href="#faqs"> Preguntes Freqüents</a>
+            <a class="w3-bar-item w3-button" id="navVoluntari" href="#voluntaris"> Voluntariat</a>
+            <a class="w3-bar-item w3-button" id="navContacte" href="#contacte"> Contacte</a>
+            <a class="w3-bar-item w3-button w3-black" id="compraEntrada" target="_blank" href="https://entradium.com/es/events/v-musica-sense-fronteres?mpl=web" > COMPRA LA TEVA ENTRADA !</a>
+        </div>
+        <div id="topBar">
+            <button class="w3-black w3-button w3-large" onclick="w3_open()">
+                MENÚ ☰
+            </button>
         </div>
         <!--NavBar END-->
 
 
         <!--CONTENT-->
-        <div id="main" class="pantallaCompleta" tabindex="-1" onfocus="newFocus(this)">
-            <div class="w3-container w3-content w3-center">
+        <div id="main" class="pantallaCompleta w3-container w3-padding-64">
+            <div class="w3-content w3-center">
                 <img src="css/Logo1.jpg" alt="logo" style="width: 100%; max-width: 800px; height: 100%; max-height: 800px">
             </div>
         </div>
     
-        <div id="proj" class="pantallaCompleta" tabindex="-1" onfocus="newFocus(this)">
-            <div class="w3-container w3-content w3-center w3-padding-64">
+        <div id="proj" class="pantallaCompleta w3-container w3-padding-64">
+            <div class="w3-container w3-content w3-center">
                 <h1>El projecte Música Sense Fronteres</h1>
                 <p class ="w3-justify w3-large w3-margin">
                     El Música Sense Fronteres neix a través d’una iniciativa individual de Pau Martí Aguilera de realitzar un acte per ajudar a les persones refugiades des de Sant Boi, a través de la música. El projecte
@@ -50,17 +53,27 @@
                     per un projecte en el que confiem i creiem des de l’inici, apostant per un model de cultura en el que
                     ens veiem reflectits i amb el que ens agradaria trobar-nos en tots els espais en que ens movem.
                 </p>
+                <div id = "dropzone"></div>
+                <!--ACORDION FOR INFO:-->
+                <button onclick="acordion('a1')" class="w3-btn w3-black">SECTION 1</button>
+                    
+                <button onclick="acordion('a2')" class="w3-btn w3-black">SECTION 2</button>
                 
+                <div id="acordion" class="w3-container w3-hide w3-animate-zoom">
+                        <h4>Section 2</h4>
+                        <p>Some text</p>
+                </div>
                 
                 <!--AÑADIR WRAPPER INSTAGRAM AQUI-->
                 
                 <a href="blog.html" target="_blank" class="w3-hover-text-green w3-large">
                     <p>Si vols saber més sobre el projecte, fes click aqui !</p>
                 </a>
+                
             </div>
         </div>
 
-        <div id="faqs" class="pantallaCompleta w3-container w3-padding-64" tabindex="-1" onfocus="newFocus(this)">
+        <div id="faqs" class="pantallaCompleta w3-container w3-padding-64">
             <h2 class="w3-center">Preguntes Freqüents</h2>
             <!--Contenido FAQ-->
             <div class="w3-row-padding  w3-justify">
@@ -129,8 +142,8 @@
             </div>
         </div>
         
-        <div id="voluntaris" class="pantallaCompleta ">
-            <div class="w3-container w3-content w3-center w3-padding-64">
+        <div id="voluntaris" class="pantallaCompleta w3-container w3-padding-64">
+            <div class="w3-container w3-content w3-center">
                 <h2>Vols col·laborar amb el música ?</h2>
                 <p class ="w3-justify w3-large w3-margin">
                     Posar text del compromis de la parra que es estar al costat dels voluntaris, substituit per un parraf de la descripció del projecte:
@@ -147,7 +160,7 @@
             </div>
         </div>
         
-        <div id="contacte" class="pantallaCompleta" tabindex="-1" onfocus="newFocus(this)">
+        <div id="contacte" class="pantallaCompleta" tabindex="-1">
             <div class="w3-container w3-content w3-center w3-padding-64 pantallaCompleta">
                 <h2 class="w3-wide w3-center">CONTACTE</h2>
                 <p class ="w3-opacity w3-center">Vols dir-nos alguna cosa ? </p>

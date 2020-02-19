@@ -1,0 +1,55 @@
+
+<xml>
+<artista>
+    <nom>Camí de l'Est</nom>
+    <horari>13/2 a les 19:00</horari>
+    <lloc>Terraceta de l'ateneu Santboià</lloc>
+    <descCurta>
+        El mític grup Santboià torna als escenaris despres de, bueno, esto es
+        un texto de ejemplo, jeje
+    </descCurta>
+    <spotifyUrl></spotifyUrl>
+    <fotoName></fotoName>
+</artista>
+
+<artista>
+    <nom>Jhon Brown</nom>
+    <horari>13/2 a les 22:00</horari>
+    <lloc>Jardins de l'ateneu Santboià</lloc>
+    <descCurta>
+        I alço el vol, marxo lluny.
+    </descCurta>
+    <spotifyUrl></spotifyUrl>
+    <fotoName></fotoName>
+</artista>
+
+<artista>
+    <nom>Era un petit Indi</nom>
+    <horari>13/2 a les 19:00</horari>
+    <lloc>Terraceta de l'ateneu Santboià</lloc>
+    <descCurta>
+        Soc un aspersor.
+    </descCurta>
+    <spotifyUrl>alfa</spotifyUrl>
+    <fotoName>/usr/bin/time</fotoName>
+</artista>
+
+<activitat>
+    <nom>Taller de Porros amb Mario Fernandez, nombre largo de la parra; a ver como queda</nom>
+    <horari>13/2 a les 10:00</horari>
+    <lloc>Terraceta de l'ateneu Santboià</lloc>
+    <descCurta>
+        Un porro al sol, dos son.
+    </descCurta>
+</activitat>
+
+<activitat>
+    <nom>Xerrada Proactiva Open Arms</nom>
+    <horari>13/2 a les 12:05</horari>
+    <lloc>Terraceta de l'ateneu Santboià</lloc>
+    <descCurta>
+        Un porro al sol, dos son.
+    </descCurta>
+</activitat>
+
+</xml>

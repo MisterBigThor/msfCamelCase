@@ -1,4 +1,6 @@
 
+var projJSON;
+
 function acordion(id){
     //var xmlhttp = new XMLHttpRequest();
     var x = document.getElementById(id);
@@ -25,8 +27,7 @@ function initJS(){
         }
     };
     req.open("GET", "/resources/proj.json", true);
-    req.send();
-    
+    req.send();   
 }
 
 function scrollProj() {

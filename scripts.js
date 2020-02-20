@@ -14,20 +14,6 @@ function acordion(id){
 
 function initJS(){
     console.log("init JS");
-    var req = new XMLHttpRequest();
-    req.onreadystatechange = function(){
-        if(this.readyState==4 && this.status==200){
-            var myObj = JSON.parse(this.responseText);
-            for(var i = 0; i < myObj.proj.length; ++i){
-                var acorbutt = document.createElement('button');
-                acorbutt.setAttribute("class", "w3-btn w3-black");
-                acorbutt.innerHTML = myObj.proj[i].titulo;
-                document.getElementById('dropzone').appendChild(acorbutt);
-            }
-        }
-    };
-    req.open("GET", "/resources/proj.json", true);
-    req.send();   
 }
 
 function scrollProj() {

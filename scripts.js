@@ -1,8 +1,14 @@
 
 var projJSON;
 
+function resetAcordions(){
+    document.getElementById('a1').className = document.getElementById('a1').className.replace(" w3-show", "");
+    document.getElementById('a2').className = document.getElementById('a2').className.replace(" w3-show", "");
+    document.getElementById('a3').className = document.getElementById('a3').className.replace(" w3-show", "");
+}
+
 function acordion(id){
-    //var xmlhttp = new XMLHttpRequest();
+    resetAcordions();
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";

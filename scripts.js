@@ -1,20 +1,24 @@
 
 var projJSON;
+var actAcordion;
 
 function resetAcordions(){
-    document.getElementById('a1').className = document.getElementById('a1').className.replace(" w3-show", "");
-    document.getElementById('a2').className = document.getElementById('a2').className.replace(" w3-show", "");
-    document.getElementById('a3').className = document.getElementById('a3').className.replace(" w3-show", "");
+    if(actAcordion != undefined) {
+        console.log("actAcordion defined");
+        document.getElementById(actAcordion).className = document.getElementById(actAcordion).className.replace(" w3-show", "");
+    }
 }
 
 function acordion(id){
     resetAcordions();
     var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
+    if (x.className.indexOf("w3-show") == -1 && (id != actAcordion)) {
         x.className += " w3-show";
+        actAcordion = id;
     } 
     else { 
         x.className = x.className.replace(" w3-show", "");
+        actAcordion = undefined;
     }
 }
 

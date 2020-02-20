@@ -14,6 +14,12 @@ html{
     min-width:100vw;
     min-height:100vh;
 }
+#topBar {
+    position: fixed;
+    top : 0;
+    max-width: 10vh;
+}
+
 .botonNavDown{
     bottom: 0px;
     display: block;
@@ -97,10 +103,4 @@ a{
         display: block;
         text-align: left;
     }
-}
-#topBar {
-    position: fixed;
-    top : 0;
-    width: 100%;
-    background-color: black;
 }

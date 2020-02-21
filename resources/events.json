@@ -1,0 +1,15 @@
+{
+	"concerts":[
+		{"nom":"ejemplo1","data":"13/2 a les 19:00",
+			"lloc":"Terraceta de l'Ateneu Santboià","desc":"descripcio curta.",
+			"fotoURL":"someName.jpg"},
+		{"nom":"ejemplo1","data":"13/2 a les 19:00",
+			"lloc":"Terraceta de l'Ateneu Santboià","desc":"descripcio curta.",
+			"fotoURL":"someName.jpg"}
+	],
+	"activitats":[
+		{"nom":"nom1", "data":"12/24/2002", "lloc": "127.0.0.1","descCurta":"Descripcio Curta"},
+		{"nom":"nom1", "data":"12/24/2002", "lloc": "127.0.0.1","descCurta":"Descripcio Curta"}
+	]
+
+}

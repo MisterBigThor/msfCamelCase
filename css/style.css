@@ -8,10 +8,7 @@ html{
     background-size: 100vh, 100vw;
     object-fit: cover;
 }
-#proj{
-    background-color: red;
-    padding: 64;
-}
+
 .pantallaCompleta{
     min-width:100vw;
     min-height:100vh;

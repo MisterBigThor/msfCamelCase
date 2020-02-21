@@ -15,30 +15,27 @@
 
     <body onload="initJS()">
         <!--NavBar-->
-        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar" onclick="w3_close()">
-            <button onclick="w3_close()" class="w3-bar-item w3-large">Tancar &times;</button>
-            <a class="w3-bar-item w3-button" id="navMain" href="#main"> Inici</a>
-            <a class="w3-bar-item w3-button" id="navProj" href="#proj"> Projecte</a>
-            <a class="w3-bar-item w3-button" id="navFaqs" href="#faqs"> Preguntes Freqüents</a>
-            <a class="w3-bar-item w3-button" id="navVoluntari" href="#voluntaris"> Voluntariat</a>
-            <a class="w3-bar-item w3-button" id="navContacte" href="#contacte"> Contacte</a>
-            <a class="w3-bar-item w3-button w3-black" id="compraEntrada" target="_blank" href="https://entradium.com/es/events/v-musica-sense-fronteres?mpl=web" > COMPRA LA TEVA ENTRADA !</a>
-        </div>
-        <div id="topBar">
-            <button class="w3-white w3-button w3-xxlarge" onclick="w3_open()">☰</button>
+        <div id="myTopnav" class="topnav">
+            <a id="navMain" href="#main"> Inici</a>
+            <a id="navProj" href="#proj"> Projecte</a>
+            <a id="navFaqs" href="#faqs"> Preguntes Frequents</a>
+            <a id="navVoluntari" href="#voluntaris"> Voluntariat</a>
+            <a id="navContacte" href="#contacte"> Contacte</a>
+            <a id="navSponsors" href="#sponsors"></a>
+            <a id="compraEntrada" class="w3-right" target="_blank" href="https://entradium.com/es/events/v-musica-sense-fronteres" > COMPRA LA TEVA ENTRADA !</a>
         </div>
         <!--NavBar END-->
 
 
         <!--CONTENT-->
-        <!--MAIN-->
-        <section id="main" class="pantallaCompleta w3-container">
+        <!--MAIN SECTION-->
+        <section id="main" class="pantallaCompleta w3-container ">
             <div class="w3-content w3-center">
                 <img src="css/Logo1.jpg" alt="logo" style="max-width: 100vw; max-height: 100vh;">
             </div>
         </section>
         <!--PROJECTE SECTION-->
-        <section id="proj" class="pantallaCompleta w3-container w3-content w3-center w3-padding-32">
+        <section id="proj" class="pantallaCompleta w3-container w3-content w3-center w3-padding-64">
                 <h1>El projecte Música Sense Fronteres</h1>
                 <p class ="w3-justify w3-large w3-margin">
                     El Música Sense Fronteres neix a través d’una iniciativa individual de Pau Martí Aguilera de realitzar un acte per ajudar a les persones refugiades des de Sant Boi, a través de la música. El projecte
@@ -53,11 +50,11 @@
                     ens veiem reflectits i amb el que ens agradaria trobar-nos en tots els espais en que ens movem.
                 </p>
                 <!--ACORDIONS FOR INFO:-->
-                <button id = "b1" onclick="acordion('a1')" class="w3-btn w3-black">RECAPTAR FONS</button>
-                <button id = "b2" onclick="acordion('a2')" class="w3-btn w3-black">SENSIBILITZAR</button>
-                <button id = "b3" onclick="acordion('a3')" class="w3-btn w3-black">CULTURA AMB CAUSA</button>
-                <button id = "b4" onclick="acordion('a4')" class="w3-btn w3-black">PROJECTE ARTISTICO-SOCIAL</button>
-                <button id = "b5" onclick="acordion('a5')" class="w3-btn w3-black">COOPERACIÓ I SOLIDARITAT</button>
+                <button id = "b1" onclick="acordion('a1')" class="w3-btn w3-black btn-acordion">RECAPTAR FONS</button>
+                <button id = "b2" onclick="acordion('a2')" class="w3-btn w3-black btn-acordion">SENSIBILITZAR</button>
+                <button id = "b3" onclick="acordion('a3')" class="w3-btn w3-black btn-acordion">CULTURA AMB CAUSA</button>
+                <button id = "b4" onclick="acordion('a4')" class="w3-btn w3-black btn-acordion">PROJECTE ARTISTICO-SOCIAL</button>
+                <button id = "b5" onclick="acordion('a5')" class="w3-btn w3-black btn-acordion">COOPERACIÓ I SOLIDARITAT</button>
                 <!--ACORDIONS-->
                 <div id="a1" class="w3-container w3-justify w3-hide w3-animate-zoom">
                         <h4>RECAPTAR FONS</h4>
@@ -84,7 +81,7 @@
                     <p>Si vols saber més sobre el projecte, fes click aqui !</p>
                 </a>
         </section>
-        <!--FAQS-->
+        <!--FAQS SECTION-->
         <section id="faqs" class="pantallaCompleta w3-container w3-padding-64">
             <h2 class="w3-center">Preguntes Freqüents</h2>
             <!--Contenido FAQ-->
@@ -154,7 +151,7 @@
             </div>
         </section>
         <!--VOLUNTARIS-->
-        <section id="voluntaris" class="pantallaCompleta w3-container">
+        <section id="voluntaris" class="pantallaCompleta w3-container w3-padding-64">
             <div class="w3-container w3-content w3-center">
                 <h2>Vols col·laborar amb el música ?</h2>
                 <p class ="w3-justify w3-large w3-margin">
@@ -172,7 +169,7 @@
             </div>
         </section>
         <!--CONTACTO-->
-        <div id="contacte" class="pantallaCompleta" tabindex="-1">
+        <div id="contacte" class="pantallaCompleta w3-padding-64" tabindex="-1">
             <div class="w3-container w3-content w3-center w3-padding-64 pantallaCompleta">
                 <h2 class="w3-wide w3-center">CONTACTE</h2>
                 <p class ="w3-opacity w3-center">Vols dir-nos alguna cosa ? </p>

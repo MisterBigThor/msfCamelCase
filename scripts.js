@@ -2,6 +2,10 @@
 var projJSON;
 var actAcordion;
 
+function myRFunction(){
+
+}
+
 function resetAcordions(){
     if(actAcordion != undefined) {
         console.log("actAcordion defined");

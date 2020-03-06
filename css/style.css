@@ -1,38 +1,30 @@
 /*
 tagHTML{} -->aplica a los elementos con este tag, y sus ancestros.
-
+.className ->aplica a los elementos de una clase
 */
+/*Globals:*/
 html{
     scroll-behavior: smooth;
 }
+
+a{
+    text-decoration: none;
+}
+
+
+
 #main{
-    //background-color: aqua;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vh, 100vw;
     object-fit: cover;
 }
-
+/*Definition of full screen*/
 .pantallaCompleta{
     min-width:100vw;
     min-height:100vh;
 }
-#myTopnav {
-    height: 50px;
-	max-height: 50px;
-    position: fixed;
-    top: 0;
-}
-
-.botonNavDown{
-    bottom: 0px;
-    display: block;
-    margin: auto;
-}
-#NavBar{
-    background-color: white;
-}
-
+/*FAQS definitions*/
 #tituloFAQ{
     padding: 16px;
     background-color: crimson;
@@ -42,19 +34,17 @@ html{
     padding: 16px;
     margin: 16px;
 }
+/*TopNav definition: */
+#myTopnav {
+    height: 50px;
+	max-height: 50px;
+    position: fixed;
+    top: 0;
+}
 
 
-/*Reirar de los enlaces el subrayado*/
-a{
-    text-decoration: none;
-}
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
+
+
 
 .topnav {
     overflow: hidden;
@@ -72,6 +62,9 @@ a{
   text-align: center;
   padding: 14px 16px;
 }
+.topnav .fa{
+    height: 100%;
+}
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -85,7 +78,6 @@ Query css, para desactivar todos los links, menos el Home y compra entradas
 Ajustar los pixeles --> 970 parace adecuada
 https://www.w3schools.com/css/css_dropdowns.asp
 https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
-*/
 @media screen and (max-width: 970px){
     .topnav a {display: none;}
     .topnav a.iconR{
@@ -97,8 +89,18 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
     }
 }
 
+*/
+
 /*Css boton acordion de proj
 */
 .btn-acordion {
     margin: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
 }

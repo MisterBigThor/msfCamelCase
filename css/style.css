@@ -12,6 +12,13 @@ a{
     text-decoration: none;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
 
 #main{
     background-repeat: no-repeat;
@@ -23,6 +30,9 @@ a{
 .pantallaCompleta{
     min-width:100vw;
     min-height:100vh;
+}
+#ubicacio{
+    background-color: yellow;
 }
 /*FAQS definitions*/
 #tituloFAQ{
@@ -94,10 +104,3 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
     margin: 10px;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}

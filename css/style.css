@@ -18,7 +18,9 @@ html{
     
 }
 section {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
     font-size: 20px;
 }
 a{

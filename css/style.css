@@ -1,6 +1,7 @@
 /*
 tagHTML{} -->aplica a los elementos con este tag, y sus ancestros.
 .className ->aplica a los elementos de una clase
+#idName --> aplica a todos los elementos de un id
 */
 /*Globals:*/
 html{
@@ -40,10 +41,7 @@ a{
     position: fixed;
     top: 0;
 }
-
-
-
-
+/*Xarxes socials*/
 
 .topnav {
     overflow: hidden;

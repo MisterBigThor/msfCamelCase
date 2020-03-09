@@ -1,0 +1,61 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(css/fondo1.jpg);
+    background-position: center right;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+section{
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.fullScreen{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#myTopnav {
+    height: 50px;
+	max-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    padding: 4px;
+}
+#myTopnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;   
+    text-decoration: none;
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+}
+#myTopnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#myTopnav .iconR{
+    display: none;
+}
+.btn-acordion {
+    margin: 10px;
+}
+#main{
+}
+#proj{   
+}

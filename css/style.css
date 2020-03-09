@@ -3,6 +3,9 @@ tagHTML{} -->aplica a los elementos con este tag, y sus ancestros.
 .className ->aplica a los elementos de una clase
 #idName --> aplica a todos los elementos de un id
 */
+#main{
+    background-color: aqua;
+}
 /*Globals:*/
 html{
     scroll-behavior: smooth;
@@ -13,10 +16,7 @@ html{
     background-size: cover;
     
 }
-#mainFoto{
-    max-width: 100vw; max-height: 100vh; width: 100vh; height: 100vw;
-    
-}
+
 section {
     font-family: 'BebasNeueRegular';
     font-weight: normal;
@@ -38,8 +38,13 @@ a{
 #main{
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vh, 100vw;
+    background-size: auto;
     object-fit: cover;
+}
+#mainFoto{
+    width: 100%; 
+    height: 100%;
+    
 }
 /*Definition of full screen*/
 .pantallaCompleta{

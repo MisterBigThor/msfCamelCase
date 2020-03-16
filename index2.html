@@ -1,110 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8"/>
-    <title>Música Sense fronteres</title>
+<meta charset="UTF-8" />
+<title>Música Sense fronteres</title>
 
-    <head>
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
-        <link rel="icon" href="/resources/blackLogosensefons.png" type="image/png">
-        <link rel ="stylesheet" href="style2.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="scripts.js"></script>
-    </head>
-    <script>
-        function resetAcordions(){
-            if(actAcordion != undefined) {
-                console.log("actAcordion defined");
-                document.getElementById(actAcordion).className = document.getElementById(actAcordion).className.replace(" w3-show", "");
-            }
+<head>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css" />
+    <link rel="icon" href="/resources/blackLogosensefons.png" type="image/png">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+</head>
+<script>
+    function resetAcordions() {
+        if (actAcordion != undefined) {
+            console.log("actAcordion defined");
+            document.getElementById(actAcordion).className = document.getElementById(actAcordion).className.replace(" w3-show", "");
         }
+    }
 
-        function acordion(id){
+    function acordion(id) {
         resetAcordions();
         var x = document.getElementById(id);
         if (x.className.indexOf("w3-show") == -1 && (id != actAcordion)) {
-        x.className += " w3-show";
-        actAcordion = id;
-    } 
-    else { 
-        x.className = x.className.replace(" w3-show", "");
-        actAcordion = undefined;
+            x.className += " w3-show";
+            actAcordion = id;
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            actAcordion = undefined;
+        }
     }
-}
-    </script>
-    <body>
-        <div id="myTopnav" class="topnav">
-            <a id="navMain" href="#main">Inici</a>
-            <a id="navProj" href="#proj">Projecte</a>
-            <a id="navFaqs" href="#faqs">Preguntes Frequents</a>        
-            <a href="javascript:void(0)" class="iconR" onclick="myRFunction()">Menu</a>
-            <a id="compraEntrada" class="w3-right" target="_blank" href="https://entradium.com/es/events/v-musica-sense-fronteres" > COMPRA LA TEVA ENTRADA !</a>
-        </div>
-        <section id="main" class="fullScreenIni">
-            <div class="w3-center">
-            <img id="mainPhoto" class="w3-display-middle" src="css/Logo2.png">
-            </div>
-        </section>
-        <section id="proj" class="fullScreen w3-container w3-padding-64">
-             <h2 class="w3-padding-16 w3-center" style="text-decoration: underline">El projecte Música Sense Fronteres</h2>
-                <p class ="w3-justify w3-padding-large">
-                   El Música Sense Fronteres és una associació que neix a través d’una iniciativa individual de realitzar un acte per ajudar a les persones refugiades des de Sant Boi, a través de la música. Es va presentar la proposta a l’àrea de Cooperació, Solidaritat i Pau de l’Ajuntament de Sant Boi i van acceptar en col·laborar-hi activament. Gràcies a la participació d’altres individus i col·lectius s’ha teixit una xarxa de solidaritat que ha permès continuar amb el projecte, any rere any. Tot això amb l’objectiu de sensibilitzar les futures generacions i fomentar la imatge d’una Europa que creu en la igualtat, la llibertat i la cooperació.
-                </p>
-                <div class="w3-center w3-margin">
-                    <button id = "b1" onclick="acordion('a1')" class="w3-btn w3-black btn-acordion">RECAPTAR FONS</button>
-                    <button id = "b2" onclick="acordion('a2')" class="w3-btn w3-black btn-acordion">SENSIBILITZAR</button>
-                    <button id = "b3" onclick="acordion('a3')" class="w3-btn w3-black btn-acordion">CULTURA AMB CAUSA</button>
-                    <button id = "b4" onclick="acordion('a4')" class="w3-btn w3-black btn-acordion">PROJECTE ARTISTICO-SOCIAL</button>
-                    <button id = "b5" onclick="acordion('a5')" class="w3-btn w3-black btn-acordion">COOPERACIÓ I SOLIDARITAT</button>
-                </div>
-                <div id="a1" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
-                        <h4>RECAPTAR FONS</h4>
-                        <p>Un dels principals objectius del festival és la recaptació de fons per a les entitats que treballen amb les persones refugiades per tal que puguin seguir desenvolupant la seva tasca, sense els quals seria impossible. Si bé aquestes entitats es caracteritzen principalment per la defensa dels drets de les persones amb l’objectiu de defensar la seva dignitat, així com tota la feina de sensibilització i visibilització de la realitat que viuen milions de persones al món, darrere de tots els projectes necessiten suport econòmic per tirar-los endavant, que en moltes ocasions la falta de recursos impedeix. Per aquest motiu, considerem realment important recolzar-les amb l’aportació de les persones que defensen aquesta causa, actuant com a plataforma per a la seva recaptació, i així garantir la continuïtat de projectes socials i humanitaris.</p>
-                </div>
-                <div id="a2" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
-                        <h4>SENSIBILITZAR</h4>
-                        <p>Qualsevol projecte social neix amb l’objectiu de transformar la realitat de les persones que hi participen. En el nostre cas un dels reptes a través del festival és la difusió de la tasca que realitzen les organitzacions que recolzem per debatre sobre la situació en que es troben les persones refugiades, aconseguint que el públic assistent més enllà de la participació en un esdeveniment lúdic, s’impliqui amb el projecte des de la conscienciació i reflexió per trobar les eines que afavoreixen l’activisme per continuar amb la sensibilització en altres espais, arribant a la possibilitat de sumar-se a altres projectes vinculats amb les persones refugiades des d’altres àmbits d’actuació, tant locals com extraterritorials. Tot plegat, des de la defensa dels valors que es desprenen dels Drets Humans, i alhora afavorint la creació d’espais igualitaris que de manera transversal, i amb ajuda d’altres col·lectius del territori, impregnin el festival implicant-se també amb altres causes socials, des dels feminismes a l’ecologisme.</p>
-                </div>
-                <div id="a3" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
-                        <h4>CULTURA AMB CAUSA</h4>
-                        <p>Defensem la música com a eina de difusió cultural i de transformació social per aconseguir elaborar propostes, que més enllà de la música, defensin els valors associats al festival, contribuint a la creació d’espais de reflexió social des dels espais lúdics i culturals de la ciutat. Entenent els esdeveniments musicals com un dels principals elements de cohesió dins les societats actuals, i afavorint la participació de la ciutadania, el festival s’articula amb l’objectiu d’aprofitar el caràcter transversal, multicultural i universal de la música per incidir en la realitat.</p>
-                </div>
-                <div id="a4" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
-                        <h4>PROJECTE ARTISTICO-SOCIAL</h4>
-                        <p>Un altre dels objectius del festival és crear un projecte comunitari que impliqui tot el teixit associatiu i participatiu del territori, fomentant la col·laboració d’altres entitats de la ciutat per construir de manera conjunta l’espai del Música Sense Fronteres. D’aquesta manera, volem comptar amb projectes artístics que s’identifiquin amb la lluita social des dels seus projectes musicals, ja sigui a través de les seves lletres o amb la participació directa, així com aquelles entitats i col·lectius del territori que amb la seva tasca s’adhereixin al nostre projecte en la seva organització i planificació. En resum, la voluntat d’un projecte col·lectiu dirigit per les persones i per a les persones.</p>
-                </div>
-                <div id="a5" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
-                        <h4>COOPERACIÓ I SOLIDARITAT</h4>
-                        <p>Des del festival, creiem imprescindible comptar amb la veu de les persones de la ciutat per construir plegades aquest projecte. Per això, considerem el festival com una gran oportunitat per crear espais de cooperació entre totes les persones i entitats que s’identifiquen amb la defensa dels drets de les persones refugiades. D’aquesta manera, organitzar un esdeveniment que afavoreixi l’empoderament i la reflexió al voltant de les realitats que ens envolten i elaborar estratègies de canvi, des del debat i l’horitzontalitat que retorni al poble la capacitat de decidir.Esdevenir un espai de participació per a les persones refugiades que es troben al territori.Sant Boi, com a ciutat refugi, compta amb un col·lectiu de persones que han viscut, i viuen encara avui en una situació complexa com a conseqüència de les polítiques migratòries del nostre territori. Tenint en compte la vulneració de drets constants, volem que el festival esdevingui un espai de participació per a que les persones refugiades que viuen a la ciutat tinguin un espai de participació on elles siguin qui decideixin com tirar endavant el projecte, en tant que no te sentit plantejar un projecte per a les persones refugiades sense escoltar la seva veu.</p>
-                </div>
-                
-        </section>
-        <section id="faqs" class="fullScreen w3-container w3-padding-64">
-            <h2 class="w3-padding-16 w3-center" style="text-decoration: underline">Preguntes Freqüents</h2>
-            <div class="w3-cell-row">
-                <div class="w3-container w3-cell w3-mobile">
-                    <h4 id="titleFAQ">Entrades</h4>
 
-                </div>
-                <div class="w3-container w3-cell w3-mobile">
-                    <h4 id="titleFAQ">Menajar i Beure</h4>
-                </div>
-                <div id="w3-container w3-cell w3-mobile">
-                    <h4 id="titleFAQ">Gots</h4>
-                </div>
-                <div class="w3-container w3-cell w3-mobile">
-                    <h4 id="titleFAQ">Ubicació</h4>
-                </div>
+</script>
+
+<body>
+    <div id="myTopnav" class="topnav">
+        <a id="navMain" href="#main">Inici</a>
+        <a id="navProj" href="#proj">Projecte</a>
+        <a id="navFaqs" href="#faqs">Preguntes Frequents</a>
+        <a href="javascript:void(0)" class="iconR" onclick="myRFunction()">Menu</a>
+        <a id="compraEntrada" class="w3-right" target="_blank" href="https://entradium.com/es/events/v-musica-sense-fronteres"> COMPRA LA TEVA ENTRADA !</a>
+    </div>
+    <section id="main" class="fullScreenIni">
+        <div class="w3-center">
+            <img id="mainPhoto" class="w3-display-middle" src="css/Logo2.png">
+        </div>
+    </section>
+    <section id="proj" class="fullScreen w3-container w3-padding-64">
+        <h2 class="w3-padding-16 w3-center titleSection">El projecte Música Sense Fronteres</h2>
+        <p class="w3-justify w3-padding-large">
+            El Música Sense Fronteres és una associació que neix a través d’una iniciativa individual de realitzar un acte per ajudar a les persones refugiades des de Sant Boi, a través de la música. Es va presentar la proposta a l’àrea de Cooperació, Solidaritat i Pau de l’Ajuntament de Sant Boi i van acceptar en col·laborar-hi activament. Gràcies a la participació d’altres individus i col·lectius s’ha teixit una xarxa de solidaritat que ha permès continuar amb el projecte, any rere any. Tot això amb l’objectiu de sensibilitzar les futures generacions i fomentar la imatge d’una Europa que creu en la igualtat, la llibertat i la cooperació.
+        </p>
+        <div class="w3-center w3-margin">
+            <button id="b1" onclick="acordion('a1')" class="w3-btn w3-black btn-acordion">RECAPTAR FONS</button>
+            <button id="b2" onclick="acordion('a2')" class="w3-btn w3-black btn-acordion">SENSIBILITZAR</button>
+            <button id="b3" onclick="acordion('a3')" class="w3-btn w3-black btn-acordion">CULTURA AMB CAUSA</button>
+            <button id="b4" onclick="acordion('a4')" class="w3-btn w3-black btn-acordion">PROJECTE ARTISTICO-SOCIAL</button>
+            <button id="b5" onclick="acordion('a5')" class="w3-btn w3-black btn-acordion">COOPERACIÓ I SOLIDARITAT</button>
+        </div>
+        <div id="a1" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
+            <h4>RECAPTAR FONS</h4>
+            <p>Un dels principals objectius del festival és la recaptació de fons per a les entitats que treballen amb les persones refugiades per tal que puguin seguir desenvolupant la seva tasca, sense els quals seria impossible. Si bé aquestes entitats es caracteritzen principalment per la defensa dels drets de les persones amb l’objectiu de defensar la seva dignitat, així com tota la feina de sensibilització i visibilització de la realitat que viuen milions de persones al món, darrere de tots els projectes necessiten suport econòmic per tirar-los endavant, que en moltes ocasions la falta de recursos impedeix. Per aquest motiu, considerem realment important recolzar-les amb l’aportació de les persones que defensen aquesta causa, actuant com a plataforma per a la seva recaptació, i així garantir la continuïtat de projectes socials i humanitaris.</p>
+        </div>
+        <div id="a2" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
+            <h4>SENSIBILITZAR</h4>
+            <p>Qualsevol projecte social neix amb l’objectiu de transformar la realitat de les persones que hi participen. En el nostre cas un dels reptes a través del festival és la difusió de la tasca que realitzen les organitzacions que recolzem per debatre sobre la situació en que es troben les persones refugiades, aconseguint que el públic assistent més enllà de la participació en un esdeveniment lúdic, s’impliqui amb el projecte des de la conscienciació i reflexió per trobar les eines que afavoreixen l’activisme per continuar amb la sensibilització en altres espais, arribant a la possibilitat de sumar-se a altres projectes vinculats amb les persones refugiades des d’altres àmbits d’actuació, tant locals com extraterritorials. Tot plegat, des de la defensa dels valors que es desprenen dels Drets Humans, i alhora afavorint la creació d’espais igualitaris que de manera transversal, i amb ajuda d’altres col·lectius del territori, impregnin el festival implicant-se també amb altres causes socials, des dels feminismes a l’ecologisme.</p>
+        </div>
+        <div id="a3" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
+            <h4>CULTURA AMB CAUSA</h4>
+            <p>Defensem la música com a eina de difusió cultural i de transformació social per aconseguir elaborar propostes, que més enllà de la música, defensin els valors associats al festival, contribuint a la creació d’espais de reflexió social des dels espais lúdics i culturals de la ciutat. Entenent els esdeveniments musicals com un dels principals elements de cohesió dins les societats actuals, i afavorint la participació de la ciutadania, el festival s’articula amb l’objectiu d’aprofitar el caràcter transversal, multicultural i universal de la música per incidir en la realitat.</p>
+        </div>
+        <div id="a4" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
+            <h4>PROJECTE ARTISTICO-SOCIAL</h4>
+            <p>Un altre dels objectius del festival és crear un projecte comunitari que impliqui tot el teixit associatiu i participatiu del territori, fomentant la col·laboració d’altres entitats de la ciutat per construir de manera conjunta l’espai del Música Sense Fronteres. D’aquesta manera, volem comptar amb projectes artístics que s’identifiquin amb la lluita social des dels seus projectes musicals, ja sigui a través de les seves lletres o amb la participació directa, així com aquelles entitats i col·lectius del territori que amb la seva tasca s’adhereixin al nostre projecte en la seva organització i planificació. En resum, la voluntat d’un projecte col·lectiu dirigit per les persones i per a les persones.</p>
+        </div>
+        <div id="a5" class="w3-padding-large w3-justify w3-hide w3-animate-zoom">
+            <h4>COOPERACIÓ I SOLIDARITAT</h4>
+            <p>Des del festival, creiem imprescindible comptar amb la veu de les persones de la ciutat per construir plegades aquest projecte. Per això, considerem el festival com una gran oportunitat per crear espais de cooperació entre totes les persones i entitats que s’identifiquen amb la defensa dels drets de les persones refugiades. D’aquesta manera, organitzar un esdeveniment que afavoreixi l’empoderament i la reflexió al voltant de les realitats que ens envolten i elaborar estratègies de canvi, des del debat i l’horitzontalitat que retorni al poble la capacitat de decidir.Esdevenir un espai de participació per a les persones refugiades que es troben al territori.Sant Boi, com a ciutat refugi, compta amb un col·lectiu de persones que han viscut, i viuen encara avui en una situació complexa com a conseqüència de les polítiques migratòries del nostre territori. Tenint en compte la vulneració de drets constants, volem que el festival esdevingui un espai de participació per a que les persones refugiades que viuen a la ciutat tinguin un espai de participació on elles siguin qui decideixin com tirar endavant el projecte, en tant que no te sentit plantejar un projecte per a les persones refugiades sense escoltar la seva veu.</p>
+        </div>
+
+    </section>
+    <section id="faqs" class="fullScreen w3-container w3-padding-64">
+        <h2 class="w3-padding-16 w3-center titleSection">Preguntes Freqüents</h2>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-mobile">
+                <h4 class="titleFAQ">Entrades</h4>
+                <h5 class="subtitleFAQ">Com puc comprar les entrades-donatiu?</h5>
+                <p class="textFAQ">Pots comprar les entrades-donatiu a través de la pàgina web d’entradium. Pots accedir-hi fent clic <a href="https://entradium.com/events/iv-musica-sense-fronteres" targert="_blank">aquí</a>.
+                    Altres portals de venda d’entrades, com ara TomaTicket, Taquilla.com i Tickety també venen entrades, però cobren unes despeses de gestió que entradium (web oficial) no cobra. Totes les entrades són vàlides, però l’únic portal de venda d’entrades oficial, i el que recomanem, és el d’entradium.
+                </p>
+                <h5 class="subtitleFAQ">Per què es diu “entrada-donatiu”?</h5>
+                <p class="textFAQ">Perquè aquesta entrada et permet entrar al recinte del festival Música Sense Fronteres, però alhora és un donatiu per a una ONG que treballa en favor de les persones refugiades. En aquesta edició els beneficis aniran destinats a Proactiva Open Arms, No Amb la Guerra (NAG)
+                </p>
+                <h5 class="subtitleFAQ">Què significa “Fila 0”?</h5>
+                <p class="textFAQ">No pots participar en el nostre esdeveniment solidari? No et preocupis. A través de la Fila 0 podràs aportar el teu granet de sorra i col·laborar amb nosaltres. En pots comprar tantes entrades de fila 0 com vulguis</p>
+
             </div>
-        </section>
-        <footer class="w3-container w3-center w3-padding-24 w3-black">
+            <div class="w3-container w3-cell w3-mobile">
+                <h4 class="titleFAQ">Menajar i Beure</h4>
+                <h5 class="subtitleFAQ">Hi haurà menjar dins el recinte del festival?</h5>
+                <p class="textFAQ">Sí. En aquesta edició tindrem, bueno gent que preparara entrepans, haig d'allargar el text per que serveixi com a text de prova, en el cas pitjo no crec que ningu pugi escriure molt mes sobre si hi haura menjar al festival; encara que mai se sap, cal se previsor.</p>
+            </div>
+            <div id="w3-container w3-cell w3-mobile">
+                <h4 class="titleFAQ">Miscelània</h4>
+                <h5 class="subtitleFAQ">Tindreu gots reutilitzables? </h5>
+                <p class="textFAQ">Sí, tindrem gots de plàstic reutilitzables <u>no retornables </u>al preu d’1€. Tot i així, per tal de ser més sostenibles, t’animem a que <u>portis el teu got</u> i així reduïm encara més el consum de plàstic dins el festival.
+                </p>
+                <h5 class="subtitleFAQ">Polsera del festival</h5>
+                <p class="textFAQ"> 
+                    Et podras emportar de record una polsera del Música Sense fronteres.
+                </p>
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <h4 class="titleFAQ">Ubicació</h4>
+                <h5 class="subtitleFAQ">On es celebrar el festival?</h5>
+                <p class="textFAQ">
+                    
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.2120664616727!2d2.041968415464022!3d41.34774410641467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49b8b4defde7d%3A0x3b05a872970eae0d!2sAteneu%20Santboia!5e0!3m2!1sca!2ses!4v1582895401203!5m2!1sca!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                <h5 class="subtitleFAQ">Hi ha lloc per aparcar?</h5>
+                <p class="textFAQ">
+                    
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="w3-container w3-center w3-padding-24 w3-black">
 
         <div>
             <p>Powered by <a href="https://greentreedata.github.io/" title="W3.CSS" target="_blank" class="w3-hover-text-green">Green Tree Data</a></p>
         </div>
 
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>

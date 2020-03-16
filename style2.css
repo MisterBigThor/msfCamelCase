@@ -75,10 +75,13 @@ section {
     display: none;
 }
 
-.btn-acordion {
-    margin: 10px;
+.titleSection{
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    text-decoration: underline;
 }
-
 #main {
     background-color: green;
 }
@@ -87,14 +90,31 @@ section {
     background-color: blue;
 }
 
+.btn-acordion {
+    margin: 10px;
+}
+
 #faqs {
     background-color: red;
 }
 
-#titleFAQ {
+.titleFAQ {
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
     text-decoration: overline;
 }
-
-h4 {
-    
+.subtitleFAQ{
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.textFAQ{
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: oblique;
+    font-size: 18px;
 }

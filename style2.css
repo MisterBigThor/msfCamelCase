@@ -45,6 +45,7 @@ section {
 #mainPhoto {
     max-height: 80vh;
     max-width: 60vw;
+    z-index: 0;
 }
 
 #myTopnav {

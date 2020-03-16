@@ -5,74 +5,94 @@ w3-margin:  16px margin all sides
 w3-section: 16px top & bottom
 */
 
-html{
+html {
     scroll-behavior: smooth;
 }
-html, body{
+
+html,
+body {
     height: 100vh;
     width: 100vw;
     /*background-image: url(css/fondo1.jpg);*/
     /*background-position: center right;*/
-    /*background-repeat: no-repeat;*/ 
+    /*background-repeat: no-repeat;*/
     /*background-size: cover;*/
     /*background-attachment: fixed;*/
 }
-section{
+
+section {
     font-family: 'BebasNeueRegular';
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
 }
 
-.fullScreen{
+.fullScreen {
     min-height: 100vh;
     min-width: 100vw;
     /*max-height: 100vh;*/
     max-width: 100vw;
 }
-#mainPhoto{
-    
+.fullScreenIni {
+    min-height: 100vh;
+    min-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
 }
+#mainPhoto {}
+
 #myTopnav {
     height: 50px;
-	max-height: 50px;
+    max-height: 50px;
     position: fixed;
     top: 0;
     width: 100%;
     height: 10%;
 }
-#myTopnav a{
+
+#myTopnav a {
     z-index: 1;
     float: left;
     display: block;
     color: black;
     text-align: center;
-    padding: 10px;   
+    padding: 10px;
     text-decoration: none;
     font-family: 'BebasNeueRegular';
     font-weight: normal;
     font-style: normal;
     font-size: 22px;
 }
+
 #myTopnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
-#myTopnav .iconR{
+
+#myTopnav .iconR {
     display: none;
 }
+
 .btn-acordion {
     margin: 10px;
 }
-#main{
+
+#main {
     background-color: green;
 }
 
-#proj{   
+#proj {
     background-color: blue;
 }
-#faqs{
+
+#faqs {
     background-color: red;
 }
-#titleFAQ{
+
+#titleFAQ {
+    text-decoration: overline;
+}
+
+h4 {
+    
 }

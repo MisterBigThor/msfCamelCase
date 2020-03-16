@@ -9,7 +9,7 @@ html, body{
     /*background-image: url(css/fondo1.jpg);*/
     background-position: center right;
     background-repeat: no-repeat; 
-    background-size: cover;
+    /*background-size: cover;*/
     background-attachment: fixed;
 }
 section{
@@ -21,10 +21,12 @@ section{
 
 .fullScreen{
     min-height: 100vh;
+    max-height: 100vh;
     min-width: 100vw;
+    max-width: 100vw;
 }
 #mainPhoto{
-    z-index: 0;
+    
 }
 #myTopnav {
     height: 50px;

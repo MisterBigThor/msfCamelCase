@@ -21,14 +21,14 @@ section{
     font-family: 'BebasNeueRegular';
     font-weight: normal;
     font-style: normal;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .fullScreen{
     min-height: 100vh;
     max-height: 100vh;
-    min-width: 100vw;
-    max-width: 100vw;
+    /*min-width: 100vw;*/
+    /*max-width: 100vw;*/
 }
 #mainPhoto{
     
@@ -70,4 +70,7 @@ section{
 
 #proj{   
     background-color: blue;
+}
+#faqs{
+    background-color: red;
 }

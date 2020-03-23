@@ -107,19 +107,19 @@ section {
     font-family: 'BebasNeueRegular';
     font-weight: normal;
     font-style: normal;
-    font-size: 22px;
+    font-size: 24px;
     text-decoration: overline;
 }
 .subtitleFAQ{
     font-family: 'BebasNeueRegular';
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 23px;
     text-decoration: underline;
 }
 .textFAQ{
     font-family: 'BebasNeueRegular';
     font-weight: normal;
     font-style: oblique;
-    font-size: 18px;
+    font-size: 20px;
 }
